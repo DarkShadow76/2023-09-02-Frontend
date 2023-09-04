@@ -1,0 +1,57 @@
+/* styles.css */
+.Navbar {
+  background-color: black;
+  height: 60px;
+  margin-bottom: 10%;
+}
+
+.textColor {
+  color: white;
+}
+
+.container {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.image {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 50%;
+  height: 50%;
+}
+
+.image-1 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 35%;
+  height: 25%;
+}
+
+/** style={{height:"85%",width:"90%", alignContent:"center"}} **/
+
+.containerCarrusel {
+  height: 85%;
+  width: 90%;
+}
+
+.gradient {
+  background: #ede4ff;
+  /* Forma: círculo */
+  /* Colores: de #FF5733 a #FFC300 */
+}
+
+.ImgTest {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.testFormat {
+  display: grid;
+  gap: 32px;
+}
