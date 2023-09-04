@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Container, NavDropdown } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
 import '../styles/custom.css'
 //import Image from "react-bootstrap";
 
@@ -9,7 +10,7 @@ const Header = (props) => {
   return (
     <>
       <Navbar expand="sm" className="Navbar" fixed="top" data-bs-theme="dark">
-        <Container style={{alignContent:"center"}}>
+        <Container className="container-nav" style={{ alignContent: "center" }}>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '10rem' }} navbarScroll>
@@ -35,11 +36,14 @@ const Header = (props) => {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
+          <Button style={{ alignContent: "right" }} variant="outline-primary">Sig Up</Button>{' '}
+          <Button style={{ alignContent: "right",
+                          marginLeft: "1%" }} variant="outline-success">Log in</Button>{' '}
         </Container>
       </Navbar>
       <h2 style={{
         marginTop: "6%",
-        alignContent: "revert"
+        textAlign: "center"
       }}>{props.titulo}</h2>
     </>
   );

@@ -9,9 +9,21 @@
   color: white;
 }
 
-.container {
+.container-body {
   text-align: center;
   margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.container-nav {
+  text-align: right;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.container-footer {
+  text-align: center;
+  margin-top: 4%;
   margin-bottom: 5%;
 }
 

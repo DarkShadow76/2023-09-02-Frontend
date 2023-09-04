@@ -16,7 +16,6 @@ const Page = () => {
     makeHeader={() => <Header titulo="Acerca de" />}
     makeBody={
       () => <div className="testFormat">
-        <h1>Nosotros</h1>
         <Container expand="sm" style={{
           backgroundColor: '#D7BBF5',
           borderRadius: "1rem",
