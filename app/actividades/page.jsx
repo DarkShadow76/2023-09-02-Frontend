@@ -21,18 +21,20 @@ const Page = () => {
     makeHeader={() => <Header titulo="Actividades Cerca de ti" />}
     makeBody={
       () => <div>
-        <Stack style={{ marginTop: "2%", marginBottom: "2%" }} direction="horizontal" gap={3}>
-          <Form.Control className="me-auto" placeholder="Que tipo de actividad estas buscando?..." />
-          <Button variant="secondary">Submit</Button>
-          <div className="vr" />
-          <Button variant="outline-danger">Reset</Button>
-        </Stack>
+        <Container style={{ width: "60%", marginTop: "2%", marginBottom: "2%" }}>
+          <Stack direction="horizontal" gap={3}>
+            <Form.Control className="me-auto" placeholder="Que tipo de actividad estas buscando?..." />
+            <Button variant="secondary">Submit</Button>
+            <div className="vr" />
+            <Button variant="outline-danger">Reset</Button>
+          </Stack>
+        </Container>
         <Container className="container-body">
           <Row>
-            <Col style={{ }} sm={3}>Categoria</Col>
-            <Col style={{ }} sm={9}>Mapa</Col>
+            <Col style={{}} sm={3}>Categoria</Col>
+            <Col style={{}} sm={9}>Mapa</Col>
           </Row>
-          <Row>
+          <Row style={{ height: "100%" }}>
             <Col sm={3}>
               <ListGroup>
                 <ListGroup.Item>Museo</ListGroup.Item>
