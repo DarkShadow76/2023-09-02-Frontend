@@ -3,7 +3,6 @@ import Layout from "../../components/Layout"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import { Container } from "react-bootstrap"
-import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
