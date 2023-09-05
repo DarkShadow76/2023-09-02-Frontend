@@ -14,7 +14,7 @@ const Header = (props) => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '10rem' }} navbarScroll>
-              <Navbar.Brand href="/" style={{ color: "white" }}>TourIzi</Navbar.Brand>
+              <Navbar.Brand href="/" style={{ color: "white" }}>TourIzi Perú</Navbar.Brand>
               <Nav.Link href="/" className="textColor" style={{ color: "white" }}>Home</Nav.Link>
               <Nav.Link href="/about" style={{ color: "white" }}>About</Nav.Link>
               <Nav.Link href="#" className="nav-item active" style={{ color: "white" }}>Support

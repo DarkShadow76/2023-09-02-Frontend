@@ -8,7 +8,7 @@ const getEmpresa = () => {
 }
 **/
 
-const empresa="TourIzi v1.0 © 2021-2023"
+const empresa="TourIzi Perú v1.0 © 2021-2023"
 
 function getEmpresa() {
   return <>
