@@ -9,6 +9,11 @@
   color: white;
 }
 
+.boton-body {
+  display: block;
+  margin: 0 auto;
+}
+
 .container-body {
   text-align: center;
   margin-top: 5%;

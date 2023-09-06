@@ -22,8 +22,7 @@ export default function RootLayout({ children }) {
       ></script>
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-      <body className="gradient" style={{
-      }}>
+      <body className="gradient" style={{}}>
         {children}
       </body>
     </html >
