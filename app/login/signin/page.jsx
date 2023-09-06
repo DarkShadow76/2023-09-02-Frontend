@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+import Image from 'react-bootstrap/Image';
 
 const Page = () => {
 
@@ -31,7 +32,8 @@ const Page = () => {
         <Container style={{ width: "80%" }}>
           <Card style={{ width: '100%' }}>
             <Card.Body>
-              <Card.Title>Informacion</Card.Title>
+              <Image style={{ display: "block", margin: "0 auto", height: "10%", width: "20%" }} src="/images/logo.png" rounded alt="Logo" />
+              <Card.Title>Basic Information</Card.Title>
               <Card.Text>
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
                   <Row className="mb-3">
