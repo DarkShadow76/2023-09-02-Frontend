@@ -72,3 +72,30 @@
   display: grid;
   gap: 32px;
 }
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: "60%";
+  background-color: #f0f0f0;
+}
+
+.react-calendar {
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.react-calendar-event {
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}

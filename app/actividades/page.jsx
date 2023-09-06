@@ -10,11 +10,19 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Stack from 'react-bootstrap/Stack';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Calendar, globalizeLocalizer } from 'react-big-calendar'
+import globalize from 'globalize'
 
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 
+import '../../styles/custom.css'
+
+const localizer = globalizeLocalizer(globalize)
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+const myEventsList = [
+];
 
 const Page = () => {
   return <Layout
@@ -60,6 +68,15 @@ const Page = () => {
               </GoogleMapReact>
             </Col>
           </Row>
+          <div className="calendar-container">
+            <Calendar
+              localizer={localizer}
+              events={myEventsList}
+              startAccessor="start"
+              endAccessor="end"
+              className="react-calendar"
+            />
+          </div>
         </Container>
       </div>
     }
