@@ -16,61 +16,39 @@ const Page = () => {
     makeHeader={() => <Header titulo="Edita tu perfil" />}
     makeBody={
       () => <div>
-        <h2>Selecciona tu Avatar</h2>
         <Container>
+
           <Row>
-            <Col sm>
-              <Card style={{ width: '18rem' }}>
+            <Col sm={8}>
+              <h3>Genera tu Avatar</h3>
+              <Card style={{ width: '18rem', display: "block", margin: "0 auto" }}>
                 <Card.Img variant="top" src={url} />
                 <Card.Body>
                   <Card.Title>Avatar 1</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Avatar Generado por IA
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button style={{ display: "block", margin: "0 auto" }} variant="primary">Generar Avatar</Button>
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={url} />
-                <Card.Body>
-                  <Card.Title>Avatar 2</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={url} />
-                <Card.Body>
-                  <Card.Title>Avatar 3</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
+            <Col sm={4}>
+              <h3 style={{ marginTop: "2%", marginBottom: "2%" }}>Intereses</h3>
+              <div>
+                <Form>
+                  {['checkbox', 'checkbox', 'checkbox', 'checkbox'].map((type) => (
+                    <div key={`default-${type}`} className="mb-3">
+                      <Form.Check // prettier-ignore
+                        type={type}
+                        id={`default-${type}`}
+                        label={`categorias ${type}`}
+                      />
+                    </div>
+                  ))}
+                </Form>
+              </div>
             </Col>
           </Row>
-          <h3 style={{ marginTop: "2%", marginBottom: "2%" }}>Intereses</h3>
-          <Form>
-            {['checkbox', 'checkbox', 'checkbox', 'checkbox'].map((type) => (
-              <div key={`default-${type}`} className="mb-3">
-                <Form.Check // prettier-ignore
-                  type={type}
-                  id={`default-${type}`}
-                  label={`categorias ${type}`}
-                />
-              </div>
-            ))}
-          </Form>
         </Container>
       </div>
     }
