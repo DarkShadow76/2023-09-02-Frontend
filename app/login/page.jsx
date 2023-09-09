@@ -13,7 +13,7 @@ const Page = () => {
     makeHeader={() => <Header titulo="Log In" />}
     makeBody={
       () => <div>
-        <Container style={{ width: "45%" }}>
+        <Container style={{ width: "85%" }}>
           <Card style={{ width: '100%' }}>
             <Card.Body>
               <Image style={{ display: "block", margin: "0 auto", height: "30%", width: "40%" }} src="/images/logo.png" rounded alt="Logo" />
@@ -34,12 +34,14 @@ const Page = () => {
                   <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Recuerdame" />
                   </Form.Group>
-                  <Button style={{ display: "block", margin: "0 auto", width: "30%" }} variant="warning" type="submit">
+                  <Button href="/configurar" style={{ display: "block", margin: "0 auto", width: "45%" }} variant="warning" type="submit">
                     Log In
                   </Button>
                 </Form>
               </Card.Text>
-              <Button style={{ display: "block", margin: "0 auto", width: "30%" }} variant="primary">Crear Cuenta</Button>
+              <Button href style={{ display: "block", margin: "0 auto", width: "45%" }} variant="primary">
+                Crear Cuenta
+              </Button>
             </Card.Body>
           </Card>
         </Container>

@@ -29,7 +29,7 @@ const Page = () => {
     makeHeader={() => <Header titulo="Crear Cuenta" />}
     makeBody={
       () => <div>
-        <Container style={{ width: "80%" }}>
+        <Container style={{ width: "85%" }}>
           <Card style={{ width: '100%' }}>
             <Card.Body>
               <Image style={{ display: "block", margin: "0 auto", height: "10%", width: "20%" }} src="/images/logo.png" rounded alt="Logo" />
@@ -138,7 +138,7 @@ const Page = () => {
                       </a>
                     </Col>
                   </Row>
-                  <Button style={{ display: "block", margin: "0 auto", width: "15%" }} type="submit">Confirm</Button>
+                  <Button style={{ display: "block", margin: "0 auto", width: "40%" }} type="submit">Confirm</Button>
                 </Form>
               </Card.Text>
             </Card.Body>

@@ -1,5 +1,6 @@
 "use client"
 import { Container } from "react-bootstrap";
+import { useState } from 'react';
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Layout from "../../components/Layout";
@@ -10,8 +11,9 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Stack from 'react-bootstrap/Stack';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { Calendar, globalizeLocalizer } from 'react-big-calendar'
+import { globalizeLocalizer } from 'react-big-calendar'
 import globalize from 'globalize'
+import Calendar from 'react-calendar';
 
 import React from "react";
 import GoogleMapReact from 'google-map-react';
@@ -25,6 +27,8 @@ const myEventsList = [
 ];
 
 const Page = () => {
+  const [date, setDate] = useState(new Date());
+
   return <Layout
     makeHeader={() => <Header titulo="Actividades Cerca de ti" />}
     makeBody={
@@ -69,15 +73,13 @@ const Page = () => {
             </Col>
           </Row>
           <div className="calendar-container">
-            <Calendar
-              localizer={localizer}
-              events={myEventsList}
-              startAccessor="start"
-              endAccessor="end"
-              className="react-calendar"
-            />
+            <Calendar onChange={setDate} value={date} />
           </div>
         </Container>
+        <p className='text-center'>
+          <span className='bold'>Selected Date:</span>{' '}
+          {date.toDateString()}
+        </p>
       </div>
     }
     makeFooter={() => <Footer />}
