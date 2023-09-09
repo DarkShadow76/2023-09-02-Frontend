@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/DarkShadow76/2023-09-02-Frontend#readme",
   "dependencies": {
+    "@react-spring/web": "^9.5.5",
     "bootstrap": "^5.3.1",
     "google-map-react": "^2.2.1",
     "next": "^13.4.19",
@@ -30,6 +31,7 @@
     "react-big-calendar": "^1.8.2",
     "react-bootstrap": "^2.8.0",
     "react-calendar": "^4.6.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-tinder-card": "^1.6.2"
   }
 }
